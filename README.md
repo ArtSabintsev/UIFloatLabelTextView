@@ -15,9 +15,8 @@ Image credit: [Matt D. Smith](http://twitter.com/mds).
 ### Changelog (v1.0.0)
 - Initial version
 =======
-### Changelog (v1.0.5)
-- Minor code tweaks
->>>>>>> FETCH_HEAD
+### Changelog (v1.0.0)
+- Initial code commit
 
 ### Features
 - Works with all view `init` styles
@@ -27,9 +26,6 @@ Image credit: [Matt D. Smith](http://twitter.com/mds).
 - Works with all `NSTextAlignments`
 - Support for disabling all default UIMenuController options
 	- E.g., Paste, Copy, Cut, Select, Select All
-- Animations
-	- Animation when toggling UILabel visibility
-	- Animation when clearing text
 
 ### Installation
 ```

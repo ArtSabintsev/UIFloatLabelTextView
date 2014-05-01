@@ -16,11 +16,7 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
     UIFloatLabelAnimationTypeHide
 };
 
-<<<<<<< HEAD:UIFloatLabelTextView/UIFloatLabelTextView.m
 @interface UIFloatLabelTextView ()
-=======
-@interface UIFloatLabelTextField ()
->>>>>>> FETCH_HEAD:UIFloatLabelTextField/UIFloatLabelTextField.m
 
 @property (nonatomic, strong) UIColor *storedTextColor;
 @property (nonatomic, copy) NSString *storedText;
@@ -113,39 +109,8 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
     // Text Color
     _storedTextColor = [UIColor blackColor];
     
-<<<<<<< HEAD:UIFloatLabelTextView/UIFloatLabelTextView.m
     // Placeholder Color
     _placeholderTextColor = [UIColor lightGrayColor];
-=======
-    /*
-     Observer for replicating `textField:shouldChangeCharactersInRange:replacementString:` UITextFieldDelegate method,
-     without explicitly using UITextFieldDelegate.
-     */
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textDidChange:)
-                                                 name:UITextFieldTextDidChangeNotification object:nil];
-}
-
-- (void)setupClearTextFieldButton
-{
-    // Create selector for Apple's built-in UITextField button - clearButton
-    SEL clearButtonSelector = NSSelectorFromString(@"clearButton");
-    
-    // Reference clearButton getter
-    IMP clearButtonImplementation = [self methodForSelector:clearButtonSelector];
-    
-    // Create function pointer that returns UIButton from implementation of method that contains clearButtonSelector
-    UIButton * (* clearButtonFunctionPointer)(id, SEL) = (void *)clearButtonImplementation;
-    
-    // Set clearTextFieldButton reference to "clearButton" from clearButtonSelector
-    _clearTextFieldButton = clearButtonFunctionPointer(self, clearButtonSelector);
-    
-    // Remove all clearTextFieldButton target-actions (e.g., Apple's standard clearButton actions)
-    [self.clearTextFieldButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
-    
-    // Add new target-action for clearTextFieldButton
-    [_clearTextFieldButton addTarget:self action:@selector(clearTextField) forControlEvents:UIControlEventTouchUpInside];
->>>>>>> FETCH_HEAD:UIFloatLabelTextField/UIFloatLabelTextField.m
 }
 
 - (void)setupFloatLabel
@@ -226,13 +191,8 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
                                    CGRectGetHeight([_floatLabel frame]));
 }
 
-<<<<<<< HEAD:UIFloatLabelTextView/UIFloatLabelTextView.m
-
 #pragma mark - Notifications
 - (void)textDidBeginEditing:(NSNotification *)notification
-=======
-- (void)animateClearingTextFieldWithArray:(NSTimer *)timer
->>>>>>> FETCH_HEAD:UIFloatLabelTextField/UIFloatLabelTextField.m
 {
     if ([self.text isEqualToString:_placeholder]) {
         self.text = nil;

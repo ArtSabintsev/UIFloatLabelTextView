@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>31430569-117B-43B4-A324-002D4FED6CB1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UIFloatLabelSampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DE2B0E93-4871-4046-8EC6-0AEB2BA53AFD</key>
+		<string>ssh://github.com/ArtSabintsev/UIFloatLabelTextField.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UIFloatLabelSampleApp/UIFloatLabelSampleApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DE2B0E93-4871-4046-8EC6-0AEB2BA53AFD</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ArtSabintsev/UIFloatLabelTextField.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DE2B0E93-4871-4046-8EC6-0AEB2BA53AFD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DE2B0E93-4871-4046-8EC6-0AEB2BA53AFD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIFloatLabelTextField</string>
+		</dict>
+	</array>
+</dict>
+</plist>

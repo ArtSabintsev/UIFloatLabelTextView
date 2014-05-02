@@ -3,7 +3,7 @@
 ___
 
 ### Note
-If you are looking for the `UILabel` equivalent of this class, please visit my [UIFloatLabelTextField](http://www.github.com/ArtSabintsev/UIFloatLabelTextField) repository.
+If you are looking for the `UITextField` equivalent of this class, please visit my [UIFloatLabelTextField](http://www.github.com/ArtSabintsev/UIFloatLabelTextField) repository.
 
 ### About
 In 2013, [**Matt D. Smith**](http://twitter.com/mds) unveiled the **[Float Label](http://www.floatlabel.com)** user interface design pattern. In short, it retains a text field's placeholder above said text field as a *floating label*. This label is brightly colored when the field is active, and dimly colored when a user has finished editing that field. 

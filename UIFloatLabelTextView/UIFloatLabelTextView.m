@@ -191,6 +191,17 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
                                    CGRectGetHeight([_floatLabel frame]));
 }
 
+- (void)updateRectForTextFieldGeneratedViaAutoLayout
+{
+    // Do not shift the frame if textField is pre-populated
+    if (![self.text length]) {
+        _floatLabel.frame = CGRectMake(_xOrigin,
+                                       0.0f,
+                                       CGRectGetWidth([_floatLabel frame]),
+                                       CGRectGetHeight([_floatLabel frame]));
+    }
+}
+
 #pragma mark - Notifications
 - (void)textDidBeginEditing:(NSNotification *)notification
 {
@@ -265,6 +276,13 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
     }
 }
 
+#pragma mark - UIView (Override)
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self setTextAlignment:[self textAlignment]];
+}
+
 #pragma mark - UIResponder (Override)
 -(BOOL)becomeFirstResponder
 {
@@ -272,6 +290,8 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
     
     _floatLabel.textColor = _floatLabelActiveColor;
     _storedText = [self text];
+
+    [self updateRectForTextFieldGeneratedViaAutoLayout];
     
     return YES;
 }

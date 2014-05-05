@@ -23,16 +23,19 @@
 @property (nonatomic, strong) UIColor *placeholderTextColor;            UI_APPEARANCE_SELECTOR
 
 /**
-<<<<<<< HEAD:UIFloatLabelTextView/UIFloatLabelTextView.h
  A UILabel that @a floats above the contents of the UITextField
  */
 @property (nonatomic, strong) UILabel   *floatLabel;
 
 /**
+ * The font for @c floatLabel.
+ *
+ * Defaults to Helvetica Neue Bold 12.0f.
+ */
+@property (nonatomic, strong) UIFont    *floatLabelFont;                UI_APPEARANCE_SELECTOR
+
+/**
  * The inactive color for the floatLabel.
-=======
- * The inactive color for the floatLabel. 
->>>>>>> FETCH_HEAD:UIFloatLabelTextField/UIFloatLabelTextField.h
  *
  * Defaults to @c lightGrayColor.
  */

@@ -11,7 +11,7 @@ In 2013, [**Matt D. Smith**](http://twitter.com/mds) unveiled the **[Float Label
 ![Sample Gif of Library in Action](http://d13yacurqjgara.cloudfront.net/users/6410/screenshots/1254439/form-animation-_gif_.gif)
 
 Image credit: [Matt D. Smith](http://twitter.com/mds). 
-### Changelog (v1.0.0)
+### Changelog (v1.0.1)
 - Initial version
 
 ### Features
@@ -20,6 +20,7 @@ Image credit: [Matt D. Smith](http://twitter.com/mds).
 	- Manual Frame Initialization
 	- Storyboards and Xibs
 - Works with all `NSTextAlignments`
+- Added Placeholder support
 - Support for disabling all default UIMenuController options
 	- E.g., Paste, Copy, Cut, Select, Select All
 

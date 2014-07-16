@@ -10,12 +10,6 @@
 
 #import "UIFloatLabelTextView.h"
 
-typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
-{
-    UIFloatLabelAnimationTypeShow = 0,
-    UIFloatLabelAnimationTypeHide
-};
-
 @interface UIFloatLabelTextView ()
 
 @property (nonatomic, strong) UIColor *storedTextColor;
@@ -338,6 +332,5 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
     
     [_floatLabel sizeToFit];
 }
-
 
 @end

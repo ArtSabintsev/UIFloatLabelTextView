@@ -278,6 +278,8 @@
     
     if (![self isFirstResponder] && ![self.text length]) {
         [self absoluteFloatLabelOffset:UIFloatLabelAnimationTypeHide];
+    } else {
+        [self absoluteFloatLabelOffset:UIFloatLabelAnimationTypeShow];
     }
 }
 

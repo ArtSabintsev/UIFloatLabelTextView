@@ -153,7 +153,7 @@
 - (void)toggleFloatLabel:(UIFloatLabelAnimationType)animationType
 {
     // Placeholder
-    _placeholder = (animationType == UIFloatLabelAnimationTypeShow) ? nil : [_floatLabel text];
+    _placeholder = (animationType == UIFloatLabelAnimationTypeShow) ? @"" : [_floatLabel text];
     
     // Reference textAlignment to reset origin of textView and floatLabel
     _floatLabel.textAlignment = self.textAlignment = [self textAlignment];
@@ -162,7 +162,7 @@
     UIViewAnimationOptions easingOptions = (animationType == UIFloatLabelAnimationTypeShow) ? UIViewAnimationOptionCurveEaseOut : UIViewAnimationOptionCurveEaseIn;
     UIViewAnimationOptions combinedOptions = UIViewAnimationOptionBeginFromCurrentState | easingOptions;
     void (^animationBlock)(void) = ^{
-        [self absoluteFloatLabelOffset:animationType];
+        [self toggleFloatLabelProperties:animationType];
     };
     
     // Toggle floatLabel visibility via UIView animation
@@ -175,7 +175,7 @@
 }
 
 #pragma mark - Helpers
-- (void)absoluteFloatLabelOffset:(UIFloatLabelAnimationType)animationType
+- (void)toggleFloatLabelProperties:(UIFloatLabelAnimationType)animationType
 {
     _floatLabel.alpha = (animationType == UIFloatLabelAnimationTypeShow) ? 1.0f : 0.0f;
     CGFloat yOrigin = (animationType == UIFloatLabelAnimationTypeShow) ? -UI_FLOAT_LABEL_VERTICAL_INSET_OFFSET : 0.0f;
@@ -227,6 +227,8 @@
         if ([_floatLabel alpha]) {
             [self toggleFloatLabel:UIFloatLabelAnimationTypeHide];
         }
+        
+        _storedText = @"";
     }
 }
 
@@ -237,7 +239,7 @@
     
     // When textField is pre-populated, show non-animated version of floatLabel
     if ([text length] && !_storedText && ![text isEqualToString:_placeholder]) {
-        [self absoluteFloatLabelOffset:UIFloatLabelAnimationTypeShow];
+        [self toggleFloatLabelProperties:UIFloatLabelAnimationTypeShow];
         _floatLabel.textColor = _floatLabelPassiveColor;
         self.textColor = _storedTextColor;
     }
@@ -277,7 +279,7 @@
     [self setTextAlignment:[self textAlignment]];
     
     if (![self isFirstResponder] && ![self.text length]) {
-        [self absoluteFloatLabelOffset:UIFloatLabelAnimationTypeHide];
+        [self toggleFloatLabelProperties:UIFloatLabelAnimationTypeHide];
     }
 }
 

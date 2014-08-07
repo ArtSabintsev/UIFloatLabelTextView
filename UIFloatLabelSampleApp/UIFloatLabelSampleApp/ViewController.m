@@ -50,10 +50,35 @@
                                                                         views:NSDictionaryOfVariableBindings(textView)]];
     
     // Vertical
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[textView(200)]"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[textView(100)]"
                                                                       options:0
                                                                       metrics:nil
                                                                         views:NSDictionaryOfVariableBindings(textView)]];
+    
+    
+    UIFloatLabelTextView *textView2 = [UIFloatLabelTextView new];
+    [textView2 setTranslatesAutoresizingMaskIntoConstraints:NO];
+    textView2.placeholder = @"This is your placeholder text";
+    textView2.floatLabelActiveColor = [UIColor orangeColor];
+    textView2.floatLabelPassiveColor = [UIColor lightGrayColor];
+    textView2.layer.borderColor = [[UIColor blackColor] CGColor];
+    textView2.font = [UIFont systemFontOfSize:19.0f];
+    textView2.floatLabel.font = [UIFont systemFontOfSize:12.0f];
+    [self.view addSubview:textView2];
+    
+    
+    // Horizontal
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[textView2]-10-|"
+                                                                      options:NSLayoutFormatAlignAllBaseline
+                                                                      metrics:nil
+                                                                        views:NSDictionaryOfVariableBindings(textView2)]];
+    
+    // Vertical
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[textView2(100)]-200-|"
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:NSDictionaryOfVariableBindings(textView, textView2)]];
+    
 }
 
 #pragma mark - UIResponder

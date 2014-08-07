@@ -11,8 +11,8 @@ In 2013, [**Matt D. Smith**](http://twitter.com/mds) unveiled the **[Float Label
 ![Sample Gif of Library in Action](http://d13yacurqjgara.cloudfront.net/users/6410/screenshots/1254439/form-animation-_gif_.gif)
 
 Image credit: [Matt D. Smith](http://twitter.com/mds). 
-### Changelog (v1.0.6)
-- Reverting 1.0.5, as it introduced a bug. Incrementing version as as library is used via CocoaPods.
+### Changelog (v1.0.7)
+- Bugfixes that are similar to the ones made in v1.0.13 of this libs sister-lib: https://github.com/ArtSabintsev/UIFloatLabelTextField/pull/5
 
 ### Features
 - Works with all view `init` styles

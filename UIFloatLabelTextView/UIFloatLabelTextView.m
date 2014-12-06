@@ -112,11 +112,11 @@
     // floatLabel
     _floatLabel = [UILabel new];
     _floatLabel.textColor = [UIColor blackColor];
+    _floatLabel.textAlignment = NSTextAlignmentLeft;
     _floatLabel.font =[UIFont boldSystemFontOfSize:12.0f];
     _floatLabel.alpha = 0.0f;
     [_floatLabel setCenter:CGPointMake(_xOrigin, 0.0f)];
     [self addSubview:_floatLabel];
-    
     // colors
     _floatLabelPassiveColor = [UIColor lightGrayColor];
     _floatLabelActiveColor = [UIColor blueColor];
@@ -156,7 +156,7 @@
     _placeholder = (animationType == UIFloatLabelAnimationTypeShow) ? @"" : [_floatLabel text];
     
     // Reference textAlignment to reset origin of textView and floatLabel
-    _floatLabel.textAlignment = self.textAlignment = [self textAlignment];
+    [self updateTextAlignment];
     
     // Common animation parameters
     UIViewAnimationOptions easingOptions = (animationType == UIFloatLabelAnimationTypeShow) ? UIViewAnimationOptionCurveEaseOut : UIViewAnimationOptionCurveEaseIn;
@@ -253,9 +253,10 @@
     }
 }
 
-- (void)setTextAlignment:(NSTextAlignment)textAlignment
+- (void)updateTextAlignment
 {
-    [super setTextAlignment:textAlignment];
+    NSTextAlignment textAlignment = [self textAlignment];
+    _floatLabel.textAlignment = textAlignment;
     
     switch (textAlignment) {
         case NSTextAlignmentRight: {
@@ -266,9 +267,9 @@
             _xOrigin = CGRectGetWidth([self frame])/2.0f - CGRectGetWidth([_floatLabel frame])/2.0f;
         } break;
             
-        default: // NSTextAlignmentLeft, NSTextAlignmentJustified, NSTextAlignmentNatural
+        default: { // NSTextAlignmentLeft, NSTextAlignmentJustified, NSTextAlignmentNatural
             _xOrigin = _horizontalPadding;
-            break;
+        } break;
     }
 }
 
@@ -276,8 +277,8 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    [self setTextAlignment:[self textAlignment]];
-    
+    [self updateTextAlignment];
+     
     if (![self isFirstResponder] && ![self.text length]) {
         [self toggleFloatLabelProperties:UIFloatLabelAnimationTypeHide];
     }
@@ -287,7 +288,7 @@
 -(BOOL)becomeFirstResponder
 {
     [super becomeFirstResponder];
-    
+
     _floatLabel.textColor = _floatLabelActiveColor;
     _storedText = [self text];
 

@@ -34,9 +34,10 @@
     
     UIFloatLabelTextView *textView = [UIFloatLabelTextView new];
     [textView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    textView.placeholder = @"This is your placeholder text";
+    textView.placeholder = @"Placeholder text for TextView1";
     textView.floatLabelActiveColor = [UIColor orangeColor];
     textView.floatLabelPassiveColor = [UIColor lightGrayColor];
+    textView.textAlignment = NSTextAlignmentRight;
     textView.layer.borderColor = [[UIColor blackColor] CGColor];
     textView.font = [UIFont systemFontOfSize:19.0f];
     textView.floatLabel.font = [UIFont systemFontOfSize:12.0f];
@@ -58,7 +59,7 @@
     
     UIFloatLabelTextView *textView2 = [UIFloatLabelTextView new];
     [textView2 setTranslatesAutoresizingMaskIntoConstraints:NO];
-    textView2.placeholder = @"This is your placeholder text";
+    textView2.placeholder = @"Placeholder text for TextView2";
     textView2.floatLabelActiveColor = [UIColor orangeColor];
     textView2.floatLabelPassiveColor = [UIColor lightGrayColor];
     textView2.layer.borderColor = [[UIColor blackColor] CGColor];
@@ -85,7 +86,7 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
-    if(![touch.view isMemberOfClass:[UITextField class]]) {
+    if(![touch.view isKindOfClass:[UITextView class]]) {
         [touch.view endEditing:YES];
     }
 }

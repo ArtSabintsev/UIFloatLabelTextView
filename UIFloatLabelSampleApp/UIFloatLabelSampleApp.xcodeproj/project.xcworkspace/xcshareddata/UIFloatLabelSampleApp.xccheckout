@@ -10,29 +10,29 @@
 	<string>UIFloatLabelSampleApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B1DDAED2-5E5D-4F1D-B6D1-21C92227B7AC</key>
-		<string>ssh://github.com/ArtSabintsev/UIFloatLabelTextView.git</string>
+		<key>7442DD6770B32B787A0E5E74898C940F5754487D</key>
+		<string>github.com:ArtSabintsev/UIFloatLabelTextView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UIFloatLabelSampleApp/UIFloatLabelSampleApp.xcodeproj/project.xcworkspace</string>
+	<string>UIFloatLabelSampleApp/UIFloatLabelSampleApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B1DDAED2-5E5D-4F1D-B6D1-21C92227B7AC</key>
+		<key>7442DD6770B32B787A0E5E74898C940F5754487D</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/ArtSabintsev/UIFloatLabelTextView.git</string>
+	<string>github.com:ArtSabintsev/UIFloatLabelTextView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B1DDAED2-5E5D-4F1D-B6D1-21C92227B7AC</string>
+	<string>7442DD6770B32B787A0E5E74898C940F5754487D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B1DDAED2-5E5D-4F1D-B6D1-21C92227B7AC</string>
+			<string>7442DD6770B32B787A0E5E74898C940F5754487D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>UIFloatLabelTextView</string>
 		</dict>

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+//! Project version number for UIFloatLabelTextView.
+FOUNDATION_EXPORT double UIFloatLabelTextViewVersionNumber;
+
+//! Project version string for UIFloatLabelTextView.
+FOUNDATION_EXPORT const unsigned char UIFloatLabelTextViewVersionString[];
+
 /**
  A typedef that delineates the states of the float label
  */

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E4B7F4E18F38D450093B446 /* UIFloatLabelTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B7F4D18F38D450093B446 /* UIFloatLabelTextView.m */; };
+		55CAE8241C6859460051023A /* UIFloatLabelTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAE81D1C6859460051023A /* UIFloatLabelTextView.framework */; };
+		55CAE8251C6859460051023A /* UIFloatLabelTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAE81D1C6859460051023A /* UIFloatLabelTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55CAE82A1C68595E0051023A /* UIFloatLabelTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4B7F4C18F38D450093B446 /* UIFloatLabelTextView.h */; };
+		55CAE82B1C6859600051023A /* UIFloatLabelTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B7F4D18F38D450093B446 /* UIFloatLabelTextView.m */; };
+		55CAE82E1C68597E0051023A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CAE82C1C68597A0051023A /* Launch Screen.storyboard */; };
 		8E648D6618D2A4FE00A892FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E648D6518D2A4FE00A892FB /* Foundation.framework */; };
 		8E648D6818D2A4FE00A892FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E648D6718D2A4FE00A892FB /* CoreGraphics.framework */; };
 		8E648D6A18D2A4FE00A892FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E648D6918D2A4FE00A892FB /* UIKit.framework */; };
@@ -18,9 +22,36 @@
 		8E648D7E18D2A4FE00A892FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E648D7D18D2A4FE00A892FB /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55CAE8221C6859460051023A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E648D5A18D2A4FE00A892FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55CAE81C1C6859460051023A;
+			remoteInfo = UIFloatLabelTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55CAE8291C6859470051023A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55CAE8251C6859460051023A /* UIFloatLabelTextView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		8E4B7F4C18F38D450093B446 /* UIFloatLabelTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFloatLabelTextView.h; sourceTree = "<group>"; };
-		8E4B7F4D18F38D450093B446 /* UIFloatLabelTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabelTextView.m; sourceTree = "<group>"; };
+		55CAE81D1C6859460051023A /* UIFloatLabelTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIFloatLabelTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CAE8211C6859460051023A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CAE82C1C68597A0051023A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "UIFloatLabelSampleApp/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8E4B7F4C18F38D450093B446 /* UIFloatLabelTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIFloatLabelTextView.h; path = ../../UIFloatLabelTextView/UIFloatLabelTextView.h; sourceTree = "<group>"; };
+		8E4B7F4D18F38D450093B446 /* UIFloatLabelTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFloatLabelTextView.m; path = ../../UIFloatLabelTextView/UIFloatLabelTextView.m; sourceTree = "<group>"; };
 		8E648D6218D2A4FE00A892FB /* UIFloatLabelSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIFloatLabelSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E648D6518D2A4FE00A892FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E648D6718D2A4FE00A892FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -37,12 +68,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		55CAE8191C6859460051023A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E648D5F18D2A4FE00A892FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8E648D6818D2A4FE00A892FB /* CoreGraphics.framework in Frameworks */,
 				8E648D6A18D2A4FE00A892FB /* UIKit.framework in Frameworks */,
+				55CAE8241C6859460051023A /* UIFloatLabelTextView.framework in Frameworks */,
 				8E648D6618D2A4FE00A892FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,11 +89,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E4B7F4818F38D310093B446 /* UIFloatLabelTextView */ = {
+		55CAE81E1C6859460051023A /* UIFloatLabelTextView */ = {
 			isa = PBXGroup;
 			children = (
 				8E4B7F4C18F38D450093B446 /* UIFloatLabelTextView.h */,
 				8E4B7F4D18F38D450093B446 /* UIFloatLabelTextView.m */,
+				55CAE82C1C68597A0051023A /* Launch Screen.storyboard */,
+				55CAE8211C6859460051023A /* Info.plist */,
+			);
+			path = UIFloatLabelTextView;
+			sourceTree = "<group>";
+		};
+		8E4B7F4818F38D310093B446 /* UIFloatLabelTextView */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = UIFloatLabelTextView;
 			path = ../../UIFloatLabelTextView;
@@ -64,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				8E648D6B18D2A4FE00A892FB /* UIFloatLabelSampleApp */,
+				55CAE81E1C6859460051023A /* UIFloatLabelTextView */,
 				8E648D6418D2A4FE00A892FB /* Frameworks */,
 				8E648D6318D2A4FE00A892FB /* Products */,
 			);
@@ -73,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8E648D6218D2A4FE00A892FB /* UIFloatLabelSampleApp.app */,
+				55CAE81D1C6859460051023A /* UIFloatLabelTextView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,7 +164,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		55CAE81A1C6859460051023A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CAE82A1C68595E0051023A /* UIFloatLabelTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		55CAE81C1C6859460051023A /* UIFloatLabelTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55CAE8261C6859470051023A /* Build configuration list for PBXNativeTarget "UIFloatLabelTextView" */;
+			buildPhases = (
+				55CAE8181C6859460051023A /* Sources */,
+				55CAE8191C6859460051023A /* Frameworks */,
+				55CAE81A1C6859460051023A /* Headers */,
+				55CAE81B1C6859460051023A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIFloatLabelTextView;
+			productName = UIFloatLabelTextView;
+			productReference = 55CAE81D1C6859460051023A /* UIFloatLabelTextView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8E648D6118D2A4FE00A892FB /* UIFloatLabelSampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E648D9418D2A4FE00A892FB /* Build configuration list for PBXNativeTarget "UIFloatLabelSampleApp" */;
@@ -122,10 +201,12 @@
 				8E648D5E18D2A4FE00A892FB /* Sources */,
 				8E648D5F18D2A4FE00A892FB /* Frameworks */,
 				8E648D6018D2A4FE00A892FB /* Resources */,
+				55CAE8291C6859470051023A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55CAE8231C6859460051023A /* PBXTargetDependency */,
 			);
 			name = UIFloatLabelSampleApp;
 			productName = UIFloatLabelSampleApp;
@@ -140,6 +221,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Arthur Ariel Sabintsev";
+				TargetAttributes = {
+					55CAE81C1C6859460051023A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
 			};
 			buildConfigurationList = 8E648D5D18D2A4FE00A892FB /* Build configuration list for PBXProject "UIFloatLabelSampleApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -155,15 +241,24 @@
 			projectRoot = "";
 			targets = (
 				8E648D6118D2A4FE00A892FB /* UIFloatLabelSampleApp */,
+				55CAE81C1C6859460051023A /* UIFloatLabelTextView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		55CAE81B1C6859460051023A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E648D6018D2A4FE00A892FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CAE82E1C68597E0051023A /* Launch Screen.storyboard in Resources */,
 				8E648D7E18D2A4FE00A892FB /* Images.xcassets in Resources */,
 				8E648D7018D2A4FE00A892FB /* InfoPlist.strings in Resources */,
 			);
@@ -172,11 +267,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55CAE8181C6859460051023A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CAE82B1C6859600051023A /* UIFloatLabelTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E648D5E18D2A4FE00A892FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4B7F4E18F38D450093B446 /* UIFloatLabelTextView.m in Sources */,
 				8E648D7C18D2A4FE00A892FB /* ViewController.m in Sources */,
 				8E648D7618D2A4FE00A892FB /* AppDelegate.m in Sources */,
 				8E648D7218D2A4FE00A892FB /* main.m in Sources */,
@@ -184,6 +286,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55CAE8231C6859460051023A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55CAE81C1C6859460051023A /* UIFloatLabelTextView */;
+			targetProxy = 55CAE8221C6859460051023A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8E648D6E18D2A4FE00A892FB /* InfoPlist.strings */ = {
@@ -197,6 +307,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		55CAE8271C6859470051023A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = UIFloatLabelTextView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sabintsev.UIFloatLabelTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55CAE8281C6859470051023A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = UIFloatLabelTextView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sabintsev.UIFloatLabelTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8E648D9218D2A4FE00A892FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -275,6 +440,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIFloatLabelSampleApp/UIFloatLabelSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "UIFloatLabelSampleApp/UIFloatLabelSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +455,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIFloatLabelSampleApp/UIFloatLabelSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "UIFloatLabelSampleApp/UIFloatLabelSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +465,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		55CAE8261C6859470051023A /* Build configuration list for PBXNativeTarget "UIFloatLabelTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CAE8271C6859470051023A /* Debug */,
+				55CAE8281C6859470051023A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8E648D5D18D2A4FE00A892FB /* Build configuration list for PBXProject "UIFloatLabelSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

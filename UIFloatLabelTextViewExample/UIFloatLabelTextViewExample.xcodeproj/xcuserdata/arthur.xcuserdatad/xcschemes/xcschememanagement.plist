@@ -4,20 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UIFloatLabelSampleApp.xcscheme</key>
+		<key>UIFloatLabelTextView.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UIFloatLabelTextViewExample.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>55CAE81C1C6859460051023A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8E648D6118D2A4FE00A892FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8E648D8218D2A4FE00A892FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EC898CF1EA995CC00AEA829</key>
 		<dict>
 			<key>primary</key>
 			<true/>

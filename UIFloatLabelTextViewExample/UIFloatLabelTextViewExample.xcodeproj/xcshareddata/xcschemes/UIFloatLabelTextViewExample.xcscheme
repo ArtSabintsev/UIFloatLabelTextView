@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55CAE81C1C6859460051023A"
-               BuildableName = "UIFloatLabelTextView.framework"
-               BlueprintName = "UIFloatLabelTextView"
-               ReferencedContainer = "container:UIFloatLabelSampleApp.xcodeproj">
+               BlueprintIdentifier = "8E648D6118D2A4FE00A892FB"
+               BuildableName = "UIFloatLabelTextViewExample.app"
+               BlueprintName = "UIFloatLabelTextViewExample"
+               ReferencedContainer = "container:UIFloatLabelTextViewExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8E648D6118D2A4FE00A892FB"
+            BuildableName = "UIFloatLabelTextViewExample.app"
+            BlueprintName = "UIFloatLabelTextViewExample"
+            ReferencedContainer = "container:UIFloatLabelTextViewExample.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55CAE81C1C6859460051023A"
-            BuildableName = "UIFloatLabelTextView.framework"
-            BlueprintName = "UIFloatLabelTextView"
-            ReferencedContainer = "container:UIFloatLabelSampleApp.xcodeproj">
+            BlueprintIdentifier = "8E648D6118D2A4FE00A892FB"
+            BuildableName = "UIFloatLabelTextViewExample.app"
+            BlueprintName = "UIFloatLabelTextViewExample"
+            ReferencedContainer = "container:UIFloatLabelTextViewExample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55CAE81C1C6859460051023A"
-            BuildableName = "UIFloatLabelTextView.framework"
-            BlueprintName = "UIFloatLabelTextView"
-            ReferencedContainer = "container:UIFloatLabelSampleApp.xcodeproj">
+            BlueprintIdentifier = "8E648D6118D2A4FE00A892FB"
+            BuildableName = "UIFloatLabelTextViewExample.app"
+            BlueprintName = "UIFloatLabelTextViewExample"
+            ReferencedContainer = "container:UIFloatLabelTextViewExample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -15,9 +15,6 @@ In 2013, [**Matt D. Smith**](http://twitter.com/mds) unveiled the **[Float Label
 
 Image credit: [Matt D. Smith](http://twitter.com/mds).
 
-## Changelog (v1.0.8)
-- Fixed [Issue #6](https://github.com/ArtSabintsev/UIFloatLabelTextView/issues/6).
-
 ## Features
 - Works with all view `init` styles
 	- Visual Formatting Language (for programmatic NSAutoLayout)

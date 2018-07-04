@@ -2,7 +2,8 @@
 
 ### A subclassed UITextView that implements the Float Label UI design pattern.
 
-![Cocoapods](https://img.shields.io/cocoapods/v/UIFloatLabelTextView.svg) ![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat) [![CocoaPods](https://img.shields.io/cocoapods/dt/UIFloatLabelTextView.svg)](https://cocoapods.org/pods/UIFloatLabelTextView) [![CocoaPods](https://img.shields.io/cocoapods/dm/UIFloatLabelTextView.svg)](https://cocoapods.org/pods/UIFloatLabelTextView)
+![Cocoapods](https://img.shields.io/cocoapods/v/UIFloatLabelTextView.svg) ![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
+
 ___
 
 ## Note
